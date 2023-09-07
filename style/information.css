@@ -1,0 +1,63 @@
+.nav-bar
+{
+    margin: auto;
+    text-align: center;
+}
+.nav-bar h1
+{
+    padding-bottom: 30px;
+}
+.infoimage
+{
+    max-width: 30%;
+    min-width: 40%;
+    margin: 10px;
+    border-radius: 20%;
+    border:1px solid #f7b317;
+    box-shadow: 0 0 20px #f7b317;
+}
+.float-left
+{
+    float: left;
+}
+.float-right
+{
+    float: right;
+}
+.info1background
+{
+    background-color:rgb(250 248 245);
+    padding: 140px;
+}
+.cryptoimg
+{
+    width: 100%;
+}
+.float-right
+{
+    float: right;
+}
+.infoimg
+{
+    margin-top: 20px ;
+    max-width: 100%;
+    border-radius: 8%;
+}
+.miningimg
+{
+    max-width: 100%;
+    border-radius: 8%;
+}
+@media screen and (max-width: 780px){
+    .info1background
+    {
+        padding: 120px 20px;
+    }
+    .infoimage
+    {
+        min-width: 100%;
+        float: none;
+        margin: 20px auto;
+    }
+    
+}

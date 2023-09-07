@@ -1,0 +1,61 @@
+.send-btn
+{
+    padding: 0px 24px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+.cargo img
+{
+    position: relative;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 50px;
+}
+.send-btn:hover .cargo
+{
+    padding: 0 19px;
+    position: relative;
+    left: -40px;
+    animation: drive 2s ease-in-out forwards;
+}
+.send-btn:hover .text
+{
+    display: none;
+}
+.send-btn:hover
+{
+    opacity: 0.6;
+}
+.text 
+{
+    color:  black;
+    font-weight: 900;
+    position: relative;
+    top: 0px;
+    left: -35px;
+    font-size: smaller;
+}
+@keyframes drive {
+    0% {
+        transform: rotate(0deg);
+        left: 0;
+    }
+    25%{
+        transform: rotate(0deg);
+        left: -60px;
+    }
+    100%{
+        transform: rotate(0deg);
+        left: calc(100% + 24px);
+    }
+}

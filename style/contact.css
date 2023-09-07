@@ -1,0 +1,131 @@
+.personalinfo
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 150px;
+}
+.personalinfo img
+{
+    border-radius: 30%;
+    max-width: 350px;
+    min-width: 45px;
+    height: 100%;
+    border: 2px;
+    border-style: solid;
+    border-color: #f7b317;
+    box-shadow: 0 0 40px #f7b317;
+}
+.personalinfo caption
+{
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px;
+}
+.personalinfo table
+{
+    background-color:  #f7b317;
+    border: 1px;
+    border-style: solid;
+}
+.personalinfo th
+{
+    color: blue;
+    border: 1px;
+    border-style: solid;
+}
+.personalinfo td
+{
+    color: red;
+    border: 1px;
+    border-style: solid;
+    text-align: center;
+}
+#myName
+{
+    font-size: xx-large;
+    padding: 20px;
+}
+.aboutmeinfo
+{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20%;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted #f7b317;
+}
+.aboutme
+{
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 50px;
+    padding: 20px;
+    justify-items: center;
+}
+.features
+{
+    padding-left: 10%;
+}
+.media-employment
+{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: none;
+}
+.emloyment-history
+{
+    margin: 10px auto;
+}
+.employment-history h4
+{
+    margin: auto;
+}
+.aboutme caption
+{
+    color:rgb(152, 151, 58);
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.aboutme th
+{
+    text-align: left;
+    padding: 10px 20px;
+}
+.aboutme td
+{
+    padding: 10px 20px;
+}
+.aboutme p
+{
+    text-align: center ;
+    line-height: 30px;
+}
+.inter
+{
+    width: 20px;
+}
+.education
+{
+    text-align: center;
+}
+@media screen and (max-width: 780px) {
+    .employment-table
+    {
+        display: none;
+    }
+    .media-employment
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .red
+    {
+        color: red;
+    }
+}

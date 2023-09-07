@@ -1,0 +1,69 @@
+.crypto-nav
+{
+    position: fixed;
+    top: 140px;
+    left: 10px;
+}
+.downMenu .downBtn 
+{
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+.navigationBar a:hover, .downMenu:hover .downBtn
+{
+    opacity: 0.7;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #f7c535;
+    z-index: 1;
+}
+.downMenu-content 
+{
+    display: none;
+    width: 100%;
+}
+.downMenu:hover .downMenu-content
+{
+    display: block;
+}       
+.nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    width: 110px;
+    height: 240px;
+}
+.nav-icon
+{
+    width: 35px;
+    padding: 5px;
+}
+.coin-content
+{
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+.nav-coin
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    max-width: 1300px;
+    background-color: white;
+}
+.coin-nav
+{
+    position: sticky;
+    width: 100%;
+}
+@media screen and (max-width:780px) {
+    .navigationBar{
+        display: none;
+    }
+}

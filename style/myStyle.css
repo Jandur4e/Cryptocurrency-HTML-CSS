@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+}
+.titles
+{
+    background-image: linear-gradient(15deg, #f7c535, #CD4631);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    text-align: center;
+}
+.textstyle
+{
+    display: block;
+    text-align: justify;
+    color: black;
+}
+.infobackground
+{
+    background-color: #e8e8e8;
+    padding: 160px;
+}
+.divbackground
+{
+    padding-bottom: 50px;
+    background: linear-gradient(300deg, #96939B, #564256 80%);
+    background-size: contain;
+}
+.divbackground img
+{
+    max-width: 100%;
+}
+a, q
+{
+    font-family: 'Metal Mania', cursive;
+    color: rgb(152, 151, 58);
+}
+em, i
+{
+    color:red;
+}
+.cryptocurrency
+{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: space-evenly;
+    align-content: space-around;
+    padding-top: 170px;
+    padding-bottom: 50px;
+}
+.invest, .invest ol
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.invest li
+{
+    list-style: none;
+}
+.marketwrap
+{
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-around;
+    gap: 60px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.ol-chain li
+{
+    font-family: 'Metal Mania', cursive;
+    color:rgb(152, 151, 58);
+    letter-spacing: 0.0892em;
+    text-align: center;
+    list-style-position: inside;
+}
+.mining
+{
+    padding-left: 60px;
+}
+.form
+{   
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.form label
+{
+    display: block;
+    font-weight: 900;
+    margin: auto;
+}
+.form textarea
+{
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0 0 20px #f7b317;
+}
+.input
+{
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 5px 10px;
+    box-shadow: 0 0 20px #f7b317;
+}
+#submit, #place-order, .send-btn
+{
+    display: block;
+    color: rgb(165, 68, 12);
+    text-transform: uppercase;
+    margin: 30px auto;
+    width: 140px;
+    padding: 5px 0;
+    border-radius: 10px;
+    font-weight: 900;
+    border: #f7b317;
+    box-shadow: 0 0 30px #f7b317;
+    background: linear-gradient(to left,  #f7b317 50%, #ebe7d0 50%) right;
+    background-size:200%;
+    transition: .5s ease-out;
+}
+#submit:hover, #place-order:hover
+{
+    background-position: left;
+}
+.sign-up
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.border-animation
+{
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.border-animation:hover::before
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(  transparent 120deg, #f7c535 360deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 2s ease-in-out infinite;
+    position: absolute;
+}
+.border-animation::after
+{
+    width: 225px;
+    height: 225px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border-animation img
+{
+    border-radius: 50%;
+    z-index: 1;
+}
+.white
+{
+    background-color: white;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 780px){
+    .cryptocurrency
+    {
+        margin: auto;
+    }
+    .infobackground
+    {
+        padding: 120px 20px;
+    }
+    #description
+    {
+       width: 80%;
+    }
+    .input
+    {
+        width: 60%;
+    }
+}
